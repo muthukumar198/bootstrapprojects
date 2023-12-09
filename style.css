@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#toppage
+{
+    width: 99%;
+    height: 720px;
+    font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+.intro
+{
+    width: 99%;
+    height: 720px;
+    background-image: url('bg-masthead.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bg
+{
+    width: 100%;
+    height: 720px;
+    opacity: 0.8;
+    background-color: #4E4239;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+#mainNav
+{
+  width: 99%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+  transition: background-color 0.2s ease;
+  position: fixed;
+}
+
+#mainNav .navbar-brand {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #212529;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: #6c757d;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #f4623a;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #f4623a !important;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0 1rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+  }
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+}
+
+#mainNav.scrolled {
+  background-color: #FFFFFF; /* Change this to the desired background color */
+}
+
+#mainNav.scrolled .navbar-brand,
+#mainNav.scrolled .navbar-nav .nav-link {
+  color: black; /* Change the text color on scroll */
+}
+
+#mainNav.scrolled .navbar-brand:hover,
+#mainNav.scrolled .navbar-nav .nav-link:hover
+{
+  color: #f4623a; /* Change the text color on hover */
+}
+
+
+.masthead
+{
+    padding-top: 8rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    color: #FFFFFF;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+.masthead hr
+{
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 3px solid;
+    opacity: 0.25;
+}
+
+.masthead .divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    color: #f4623a;
+    opacity: 1;
+}
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.masthead h1
+{
+    
+    margin-top: 180px;
+
+}
+.masthead p {
+    font-size: 1.15rem;
+    color: #D2CFCD;
+}
+
+@media (min-width: 992px) {
+    .masthead {
+      height: 100px;
+      min-height: 40rem;
+      padding-top: 1.2rem;
+      padding-bottom: 0;
+    }
+    .masthead p {
+        text-align: center;       
+      font-size: 1.18rem;
+      color: #D2CFCD;
+    }
+    .masthead h1
+    {
+      font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .masthead h1, .masthead .h1 {
+      font-size: 3.5rem;
+    }
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.btn
+{
+    background-color: #CF5331;
+}
+.masthead .btn-xl {
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+} 
+
+.masthead a {
+    vertical-align: middle;
+    border-radius: 10rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #f4623a;
+    font-family: Merriweather Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.masthead .btn:hover
+{
+
+    background-color: #CF5331;
+}
+
+#about
+{
+    padding: 8rem 0;
+}
+
+#about .divider
+{
+    height: 0.1rem;
+    max-width: 3.2rem;
+    margin: 1.7rem auto;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+#about
+{
+background-color: #f4623a !important;
+}
+  
+section .divider-light {
+    background-color: #fff;
+  }
+
+#about a
+{
+    vertical-align: middle;
+    border-radius: 10rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Merriweather Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+#about a:hover
+{
+  background-color: #D3D4D5;
+}
+
+#about .btn-xl {
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+}
+
+#services {
+  padding: 8rem 0;
+
+}
+
+#services .fs-1
+{
+  color: #f4623a;
+}
+
+#services .divider
+{
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  color: #f4623a;
+  opacity: 1;
+  border-style: 1px solid;
+}
+
+#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
+  position: relative;
+  display: block;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #FFFFFF;
+  background: rgba(244, 98, 58, 0.9);
+  text-align: center;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 3;
+}
+
